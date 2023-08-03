@@ -1,4 +1,4 @@
-# Employee_Database_Management_System
+# Employee Database Management System
   Managing the details of the employees by Database Management system using Django
 
 # Summary
