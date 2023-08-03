@@ -1,0 +1,38 @@
+body{
+    font-family: system-ui;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: gold;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th, td{
+    border: 2px solid lavender;
+    padding: 10px;
+}
+
+th{
+    color: khaki;
+}
+
+a{
+    text-align: center;
+    display: block;
+}
+
+

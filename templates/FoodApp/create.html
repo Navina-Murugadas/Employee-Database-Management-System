@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FoodApp/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title> ADD NEW EMPLOYEE </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/create.css' %}">
+</head>
+<body>
+    <br>
+    <h1> ADD NEW EMPLOYEE </h1>
+    <form method = 'POST' enctype="multipart/form-data">
+        {{form.as_p}}
+        {% csrf_token %}
+        <div class="button">
+            <input type="submit" value="ADD"> <button type="reset"> <script src = "https://cdn.lordicon.com/bhenfmcm.js"> </script>
+            <lord-icon
+                    src = "https://cdn.lordicon.com/nxooksci.json"
+                    trigger = "hover"
+                    colors = "primary: #121331"
+                    style = "width:20px; height:20px">
+            </lord-icon> </button> <a href="/food/show/"> <button type="button"> BACK </button> </a>
+        </div>
+    </form>
+{% endblock %}
+</body>
+</html>

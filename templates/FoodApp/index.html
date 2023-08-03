@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FoodApp/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title> EMPLOYEE DATABASE </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <h1> EMPLOYEE DATABASE </h1>
+    <table style ="width:100%" align="center">
+        <thead>
+            <tr>
+                <th> EMP_ID </th>
+                <th> FIRST_NAME </th>
+                <th> LAST_NAME </th>
+                <th> GENDER </th>
+                <th> DATE_OF_BIRTH </th>
+                <th> MOBILE_NO. </th>
+                <th> ORGANIZATION </th>
+                <th> DATE_OF_JOIN </th>
+                <th> SALARY </th>
+                <th> EMAIL_ID </th>
+                <th> PERMANENT_ADDRESS </th>
+                <th> VACCINE_STATUS </th>
+                <th> PROFILE_PIC </th>
+                <th> EDIT </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for emp in employee %}
+                <td> {{emp.Emp_ID}} </td>
+                <td> {{emp.First_Name}} </td>
+                <td> {{emp.Last_Name}} </td>
+                <td> {{emp.Gender}} </td>
+                <td> {{emp.Date_of_Birth}} </td>
+                <td> {{emp.Mobile_No}} </td>
+                <td> {{emp.Organization}} </td>
+                <td> {{emp.Date_of_join}} </td>
+                <td> {{emp.Salary}} </td>
+                <td> {{emp.Email}} </td>
+                <td> {{emp.Address}} </td>
+                <td> {{emp.Vaccine_status}} </td>
+                <td> <img src="/media/{{emp.Display_picture}}"/></td>
+                <td> <a href ="/food/delete/{{emp.id}}"> <button type="button"> <script src="https://cdn.lordicon.com/bhenfmcm.js"> </script>
+                        <lord-icon
+                                src = "https://cdn.lordicon.com/jmkrnisz.json"
+                                trigger = "hover"
+                                colors = "primary: #121331"
+                                style = "width:40px; height=30px">
+                        </lord-icon> </button> </a> <br>
+                    <a href = "/food/update/{{emp.id}}"> <button type="button"> UPDATE </button> </a> </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href = "/food/create/"> <button type="button"> ADD NEW EMPLOYEE </button> </a> <br> <br>
+    <a href="/food/start/"> <button type="button"> <script src="https://cdn.lordicon.com/bhenfmcm.js"> </script>
+        <lord-icon
+                src  = "https://cdn.lordicon.com/slduhdil.json"
+                trigger = "hover"
+                colors = "primary: #121331"
+                style = "width:40px; height:30px">
+        </lord-icon></button></a>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background: url('high.jpg');
+    font-family: system-ui;
+    color: white;
+    text-align: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+
+form{
+    text-align: center;
+    font-family: system-ui;
+}
+
+.button {
+    text-align: center;
+    display: block;
+}

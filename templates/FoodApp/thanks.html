@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FoodApp/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title> THANK YOU </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/thanks.css' %}">
+</head>
+<body>
+    <div class="wel">
+        <br> <br>
+        <h1> THANK YOU!!! </h1> <br>
+        <img src="{% static 'images/thankfood.jpg' %}" alt="Food" title="Eat right; Live right"> <br> <br> <br>
+        <a href="/food/start/"> <button type="button"> <script src="https://cdn.lordicon.com/bhenfmcm.js"> </script>
+            <lord-icon
+                    src = "https:cdn.lordicon.com/slduhdil.json"
+                    trigger = "hover"
+                    colors = "primary: #121331"
+                    style = "width:35px; height:30px">
+            </lord-icon></button></a>
+    </div>
+{% endblock %}
+</body>
+</html>

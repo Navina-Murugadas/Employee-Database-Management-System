@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FoodApp/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/update.css' %}">
+</head>
+<body>
+    <br> <br>
+    <h1> UPDATE EMPLOYEE DETAILS </h1>
+    <form method = 'POST' enctype="multipart/form-data">
+        Mobile_No : <input type="number" name="Mobile_No" value="{{employee.Mobile_No}}"> <br> <br>
+        Salary : <input type="number" name="Salary" value="{{employee.Salary}}"> <br> <br>
+        Address : <input type="text" name="Address" value="{{employee.Address}}"> <br> <br>
+        Vaccine_status : <input type="text" name="Vaccine_status" value="{{employee.Vaccine_status}}"> <br> <br>
+        Display_picture : <input type="file" name="Display_picture" value="{{employee.Display_picture}}"> <br> <br>
+        <div class="button">
+             <input type="submit" value="UPDATE"> <input type="reset" value="RESET"> <a href="/food/show/"> <button type="button"> BACK </button> </a>
+        </div>
+        {% csrf_token %}
+    </form>
+{% endblock %}
+</body>
+</html>

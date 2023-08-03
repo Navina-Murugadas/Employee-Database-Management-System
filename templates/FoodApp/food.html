@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FoodApp/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title> WELCOME </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/food.css' %}">
+</head>
+<body>
+    <div class="box">
+        <h1> Employee Database Management System <br> <strong> {{Datetime}} </strong> <br> <em> {{Greet}} </em> </h1>
+    </div>
+    <div class="wel">
+        <h1> WELCOME! </h1>
+        <h4> Good food is the foundation of genuine happiness.  Food for us comes from our relatives, whether they have <em> "Wings"</em> or <em> "Fins" </em> or <em> "Roots". </em> That is how we consider food. </h4>
+        <h3> Food has a culture. <br> It has a history. <br> It has story. <br> It has relationships. </h3> <br>
+        <div class="opt">
+            <a href="/food/show/"> <button type="button"> START </button> </a>
+        </div>
+        <br> <br> <br>
+        <div class="out">
+            <a href="/food/thanks/"> <button type="button"> SHUT DOWN </button> </a>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

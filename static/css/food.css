@@ -1,0 +1,76 @@
+body{
+    font-family: latha;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.65),rgba(0,0,0,0.38), rgba(0,0,0,0)),url('food.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    width: 900px;
+    height: auto;
+    float: right;
+    border: 1px solid none;
+}
+
+
+.box h1{
+    font-family:cursive;
+    color:bisque;
+    float: right;
+    padding-right: 40px;
+}
+
+.box h1:hover{
+    color: green;
+}
+
+.box strong{
+    font-size: 0.666em;
+    color: white;
+    float: right;
+}
+
+.box em{
+    font-size: 0.600em;
+    color: lightgray;
+    float: right;
+}
+
+.wel{
+    width: 300px;
+    height: 539px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 55px;
+}
+
+.wel h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+}
+
+.wel h4{
+    text-align: justify;
+    color: darkgray;
+    font-weight: normal;
+}
+
+.wel h3{
+    text-align: center;
+    color: darkgray;
+    font-weight: normal;
+}
+
+.opt a{
+    text-align: center;
+    margin: auto;
+    padding-left: 120px;
+}
+
+.out a{
+    text-align: center;
+    margin: auto;
+    padding-left: 100px;
+}

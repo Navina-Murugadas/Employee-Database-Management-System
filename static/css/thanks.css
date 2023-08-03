@@ -1,0 +1,32 @@
+body{
+    font-family: latha;
+    color: white;
+    background: url('food.jpg')no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.wel{
+    width: 300px;
+    height: 539px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 55px;
+}
+
+.wel h1{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.wel img{
+    height: 300px;
+    width: 300px;
+}
+
+.wel a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
