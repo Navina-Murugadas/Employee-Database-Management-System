@@ -1,7 +1,7 @@
 # Employee Database Management System
   Managing the details of the employees by Database Management system using Django
 
-# Summary
+# Summary:
   Employee Database  Management system is a service system that allows us to enter, update, access, delete, view the data using CRUD operations. 
   C - Create;
   R - Read;
